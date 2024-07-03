@@ -1,6 +1,5 @@
 "use client"
-
-import { useState } from "react"
+import * as React from "react"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -13,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function MenuHome() {
-  const [position, setPosition] = useState("bottom")
+  const [position, setPosition] = React.useState<string>("bottom")
 
   return (
     <DropdownMenu>
@@ -25,7 +24,7 @@ export function MenuHome() {
       <DropdownMenuContent className="w-56 border-transparent">
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuGroup value={position} onValueChange={setPosition}>
+        <DropdownMenuGroup value={position} onValueChange={setPosition} {...{ value: position, onValueChange: setPosition } as any}>
           <DropdownMenuItem>
             m
           </DropdownMenuItem>
