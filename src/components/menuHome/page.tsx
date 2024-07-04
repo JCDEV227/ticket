@@ -10,6 +10,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { DotsThreeOutlineVertical } from "@phosphor-icons/react"
+
 
 export function MenuHome() {
   const [position, setPosition] = React.useState<string>("bottom")
@@ -17,9 +19,9 @@ export function MenuHome() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" className="flex justify-center items-center lg:hidden">
-            menu
-        </Button>
+        <div variant="secondary" className="flex justify-center items-center lg:hidden">
+          <DotsThreeOutlineVertical size={32} />
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 border-transparent">
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
