@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { CarrosselEvent } from "../CarrosselEvent/page"
 
 export function MainHome(){
     return (
@@ -12,7 +13,10 @@ export function MainHome(){
                 <div>o</div>
             </div>
             <div className="flex justify-center items-center">
-                o
+                <CarrosselEvent />
+            </div>
+            <div className="flex justify-center items-center">
+                <Button className="lg:w-[200px] lg:h-10 lg:flex-none">Comprar Ingresso</Button>
             </div>
         </main>
     )

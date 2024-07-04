@@ -19,7 +19,7 @@ export function MenuHome() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div variant="secondary" className="flex justify-center items-center lg:hidden">
+        <div className="flex justify-center items-center lg:hidden">
           <DotsThreeOutlineVertical size={32} />
         </div>
       </DropdownMenuTrigger>
