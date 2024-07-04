@@ -14,7 +14,7 @@ export function CarrosselEvent() {
       opts={{
         align: "start",
       }}
-      className="w-full max-w-sm"
+      className="w-full max-w-[80%]"
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
